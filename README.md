@@ -6,7 +6,9 @@ It features :
 - a Virtual keyboard
 - 1 Oscillator
 - 1 ADSR enveloppe 
-- Effects : Delay, Saturation and Glide  
+- Effects : Delay, Saturation and Glide
+
+This project was developed as part of the 2nd year project at Polytech Nantes. Originally, Pad4all is a raspberry pi synthesizer. This version is an export from the school's private repository.
 
 ## How to use it
 ### Requirement
