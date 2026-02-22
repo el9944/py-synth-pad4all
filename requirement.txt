@@ -1,0 +1,6 @@
+rtmidi
+numpy
+scipy
+pyaudio
+python-rtmidi
+pillow

@@ -1,0 +1,26 @@
+classDiagram
+    Synth  "1" *-- "1..*" ModulatedOscillator
+    Synth   "1" <|-- "0..1" Looper
+    ModulatedOscillator "1" *-- "1" Oscillator
+    ModulatedOscillator "1" *-- "1" EnveloppeADSR
+    Looper "1" *-- "2" audioloop
+
+    class ModulatedOscillator{
+      +oscillator: Oscillator 
+      +modulator: EnveloppeADSR
+      +switch_to_r()
+      +switch_to_ads()
+    
+    }
+    class Looper{
+    -loops: list[audioloop]
+    -stream_callback()
+    -midi_callback()
+    }
+    class Synth{
+    -notes: list[ModulatedOscillator]
+    -knobs_map: dict
+    -stream_callback()
+    -midi_callback()
+    -play()
+    }
